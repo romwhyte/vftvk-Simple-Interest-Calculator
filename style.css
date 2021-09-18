@@ -1,9 +1,36 @@
 body {
     background-color:black;
+    display:flex;
+    position:block;
+    align-items:center;
+    justify-content: center;
+    background-position: center;
 }
 .container {
     background-color: white;
+    border-radius: 0.3125rem;
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 2.5rem;
+    width: 25rem;
+
 }
-h1{color:green;}
+
+.subdiv {
+
+    margin: 0;
+    padding: 2.5rem;
+    width: 15rem;
+    align-items:center;
+    justify-content: center;
+}
+
+h1{
+    color:gray;
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
 
 
