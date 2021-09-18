@@ -3,7 +3,7 @@ var rate = 0.5;
 function compute() {
     principal = document.getElementById("principal").value;
     
-    if (principal == null || principal == 0) {
+    if (principal == null || principal <= 0) {
         alert("Please Enter Value Greater than 0");
         return false;
     }
@@ -23,9 +23,9 @@ function compute() {
     var result2 = result1 + annee2
 
     /* calul et affichage de l'intérêt*/
-    result.innerHTML = "If you deposit" + "&nbsp;" + (principal) + "," + "<br/>" + "at an interest rate of" + "&nbsp;" + (rate) + "." + "<br/>" +
-        "You will receive an amount of" + "&nbsp;" + (principal * rate * year / 100) + "," + "<br/>" +
-        "in the year" + "&nbsp;" + (result2);
+    result.innerHTML = "If you deposit " + "&nbsp;<span class='highlight'>" + (principal) + "</span>," + "<br/>" + "at an interest rate of" + "&nbsp;<span class='highlight'>" + (rate) + "</span>." + "<br/>" +
+        "You will receive an amount of" + "&nbsp;<span class='highlight'>" + (principal * rate * year / 100) + "</span>," + "<br/>" +
+        "in the year" + "&nbsp;<span class='highlight'>" + (result2) + "</span>";
 }
 
 function rateChange(value) {

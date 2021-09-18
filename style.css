@@ -26,6 +26,10 @@ body {
     visibility: hidden
 }
 
+.highlight {
+    background-color: yellow;
+}
+
 h1{
     color:gray;
     text-align:center;
