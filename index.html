@@ -22,7 +22,7 @@
                 min="0.5"
                 max="30"
                 value="0.5"
-                onchange="rateValue(this.value);"
+                onchange="rateChange(this.value);"
               /><span><output id="rateId">0.5</output>%</span>
             </td>
           </tr>
@@ -48,11 +48,10 @@
               <button onclick="compute()">Compute Interest</button>
             </td>
           </tr>
-          <tr style="visibility: hidden">
-            <td>Interest :</td>
-            <td><span id="result"></span></td>
-          </tr>
         </table>
+        <div id="displayResult" ,style="visibility: hidden">
+          <span id="result"></span>
+        </div>
       </div>
       <footer>
         <p>&copy; Everyone Can Get Rich</p>
