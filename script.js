@@ -1,9 +1,16 @@
 var rate = 0.5;
 
 function compute() {
+    principal = document.getElementById("principal").value;
+    
+    if (principal == null || principal == 0) {
+        alert("Please Enter Value Greater than 0");
+        return false;
+    }
+
+    
     resultdoc = document.getElementById("displayResult");
     resultdoc.style.visibility = "visible";
-    principal = document.getElementById("principal").value;
     year = document.getElementById('yearId').value;
     result = document.getElementById('result');
 
