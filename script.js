@@ -5,6 +5,7 @@ function compute() {
     
     if (principal == null || principal <= 0) {
         alert("Please Enter Value Greater than 0");
+        document.getElementById("principal").focus();
         return false;
     }
 
